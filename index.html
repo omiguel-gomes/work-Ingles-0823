@@ -1,33 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trabalho de Inglês</title>
-<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
-<link rel="stylesheet" href="./css/style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trabalho de Inglês</title>
+   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-<header class="heading">
-<img src="./images/logo.png" alt="Brasão José Feliciano / Estado de São Paulo">
-<div class="botao">
-    <a href="" class="home"><button>HOME</button></a>
-    <a href="" class="pictures"><button>PICTURES</button></a>
-    <a href="" class="videos"><button>VIDEOS</button></a>
-    <a href="" class="podcast"><button>PODCAST</button></a>
-    <a href="" class="contact"><button>CONTACT</button></a>
-</div>
-</header>
-<div class="texto">
-    <section class="portugues">
-        <h1 class="portugues_titulo">Português</h1>
-        <p class="portugues_paragrafo">Bem-vindos ao nosso site! Aqui, você encontrará uma exploração abrangente do nosso tópico escolhido, meticulosamente elaborada para o nosso projeto de inglês. Através desta plataforma, pretendemos mergulhar no assunto, fornecer informações esclarecedoras e oferecer um recurso valioso para aqueles que desejam aprender mais sobre o nosso tema escolhido. Junte-se a nós nessa jornada de descoberta e aprendizado!</p>
-    </section>
-    <section class="ingles">
-        <h2 class="ingles_titulo">English</h2>
-        <p class="ingles_paragrafo">Welcome to our website! Here, you will find a comprehensive exploration of our chosen topic, meticulously crafted for our English project. Through this platform, we aim to delve into the subject matter, provide insightful information, and offer a valuable resource for those seeking to learn more about our chosen subject. Join us on this journey of discovery and learning!</p>
-</div>
-    </section>
-    <footer></footer>
+
+<body class="flex col">
+
+   <header class="heading fullwidth flex">
+      <div class="fullwidth flex center-items">
+         <a href="http://www.educacao.sp.gov.br/cgrh/escolas/jose-feliciano-de-oliveira-professor/" target="_blank"><img
+               src="./images/logo.png" alt="Brasão José Feliciano / Estado de São Paulo"
+               title="Logo Escola José Feliciano / Estado de São Paulo"></a>
+      </div>
+      <div class="fullwidth flex">
+         <a href="#HOME" class="header-item fullwidth"><button>HOME</button></a>
+         <a href="#PICTURES" class="header-item fullwidth"><button>PICTURES</button></a>
+         <a href="#VIDEOS" class="header-item fullwidth"><button>VIDEOS</button></a>
+         <a href="" class="header-item fullwidth"><button>PODCAST</button></a>
+         <a href="" class="header-item fullwidth"><button>CONTACT</button></a>
+      </div>
+      <div class="fullwidth flex center-items">
+         <a href="https://blacklivesmatter.com/" target="_blank"><img src="./images/BLM.png"
+               alt="Logo Black Lives Matter" title="Logo Black Lives Matter"></a>
+      </div>
+   </header>
+
+   <section class="page-content fullwidth flex col">
+
+      <section class="wrapper-texto flex sectionender" id="HOME">
+         <div class="flex texto fullwidth">
+            <div class="texto-item">
+               <h1 class="main-title">Português</h1>
+               <p class="text-paragraph">Bem-vindos ao nosso site! Aqui, você encontrará uma apresentação sobre o
+                  racismo e
+                  discriminação, meticulosamente elaborada para o nosso projeto de inglês. Através desta plataforma,
+                  pretendemos
+                  mergulhar no assunto, fornecer informações esclarecedoras e oferecer um recurso valioso para aqueles
+                  que
+                  desejam
+                  aprender mais sobre o nosso tema escolhido. Junte-se a nós nessa jornada de descoberta e aprendizado!
+               </p>
+            </div>
+            <div class="texto-item">
+               <h2 class="main-title">English</h2>
+               <p class="text-paragraph">Welcome to our website! Here, you will find a presentation on rascism and
+                  discrimination, meticulously crafted for our English project. Through this platform, we aim to delve
+                  into
+                  the
+                  subject matter, provide insightful information, and offer a valuable resource for those seeking to
+                  learn
+                  more
+                  about our chosen subject. Join us on this journey of discovery and learning!</p>
+            </div>
+         </div>
+      </section>
+
+      <section class="col gallery_helper fullwidth sectionender">
+         <div class="col gallery fullwidth" id="PICTURES">
+            <figure class="gallery__item gallery__item--1">
+               <img src="./images/old.JPEG" class="gallery__img" alt="Image 1"
+                  title="Código antigo, Layout antigo da página">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+               <img src="./images/old2.JPEG" class="gallery__img" alt="Image 2"
+                  title="Código antigo, Layout antigo da página">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+               <img src="./images/old3.JPEG" class="gallery__img" alt="Image 3"
+                  title="Andre e Cebola discutindo sobre o tema">
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+               <img src="./images/old4.jpg" class="gallery__img" alt="Image 4"
+                  title="Mão de homem negro apertando mão de mulher branca, simbolizando união">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+               <img src="./images/old5.jpg" class="gallery__img" alt="Image 5"
+                  title="O jogador de futebol Vinicius Junior fazendo o sinal do BLM (Black Lives Matter)">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+               <img src="./images/old6.jpeg" class="gallery__img" alt="Image 6"
+                  title="Propaganda do governo sobre racismo">
+            </figure>
+            <figure class="gallery__item gallery__item--7">
+               <img src="./images/old7.png" class="gallery__img" alt="Image 7" title="Trecho do Podcast">
+            </figure>
+            <figure class="gallery__item gallery__item--8">
+               <img src="./images/old8.png" class="gallery__img" alt="Image 8" title="Trecho do teatro sobre o racismo">
+            </figure>
+         </div>
+      </section>
+
+   </section>
+   <section class="videos col">
+      <div class="videos__content" id="VIDEOS">
+
+      </div>
+      <div class="videos__content--text">
+
+      </div>
+   </section>
+
+   <footer></footer>
 </body>
+
 </html>

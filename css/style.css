@@ -1,144 +1,228 @@
 @charset "UTF-8";
-/* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto+Slab:wght@800&family=Rubik:wght@300;400&display=swap');
 
-html {
-    height: 200%;
+*, html{
+  scroll-behavior: smooth !important;
 }
+
+body{
+  margin: 0;
+}
+
+/* classes de utilidades, coisas que podem ser aplicadas em diversos elementos */
+
+.flex{
+  display: flex;
+}
+
+.col{
+  flex-direction: column;
+}
+.row{
+  flex-direction: row;
+}
+
+.center-items{
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionender{
+  border-bottom: 15px solid #2B2D42;
+}
+
+.halfwidth{
+  flex: 0.5;
+}
+
+.fullwidth{
+  width: 100%;
+}
+
+.text-main{
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
+  padding: 30px;
+  padding-bottom: 0px;
+  margin: 200px;
+  z-index: 2;
+}
+
+.main-title{
+  font-family: 'Roboto Slab', serif;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+.text-paragraph{
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+/* classes gerais abaixo */
+
+/* CLASSES HEADER */
+
 .heading {
-    width: 100%;
-    position: fixed;
-    display: flex;
-    font-size: 100px;
-    color: black;
-    align-items: center;
-    background-color: #f6f6f6;
-    padding: 15px;
-    border-bottom: 15px solid #2B2D42;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-bottom: 15px solid #2B2D42;
+  z-index: 3;
 }
+
+.header-item button{
+  font-family: 'Rubik', sans-serif;
+  display: inline-flex;
+  align-content: center;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  font-size: 3rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: black;
+  border: 4px solid #FF5964;
+  margin: 4px;
+}
+
+.header-item button:hover{
+  background-color: #FF5964;
+  color: #ffffff;
+}
+
 .heading img {
-    max-width: 12%;
+  max-width: 10rem;
+  max-height: 10rem;
+  width: auto;
+  height: auto;
+  padding: 15px 0;
 }
-.botao {
-    left: 50%;
-    font-size: 40px;
-    margin: auto;
-}
-.botao button{
-    display: inline-flex;
-    align-content: center;
-    text-decoration: none;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    font-size: 175%;
-    border-radius: 10px;
-}
-.home button {
-    background-color: white; 
-    color: black; 
-    border: 4px solid #FF5964;
-  }
-.home button:hover {
-    background-color: #FF5964;
-    color: white;
-  }
-.pictures button {
-    background-color: white; 
-    color: black; 
-    border: 4px solid #FF5964;
-  }
-.pictures button:hover {
-    background-color: #FF5964;
-    color: white;
-  }
-.videos button {
-    background-color: white; 
-    color: black; 
-    border: 4px solid #FF5964;
-  }
-.videos button:hover {
-    background-color: #FF5964;
-    color: white;
-  }
-.podcast button {
-    background-color: white; 
-    color: black; 
-    border: 4px solid #FF5964;
-  }
-.podcast button:hover {
-    background-color: #FF5964;
-    color: white;
-  }
-.contact button {
-    background-color: white; 
-    color: black; 
-    border: 4px solid #FF5964;
-  }
-.contact button:hover {
-    background-color: #FF5964;
-    color: white;
-  }
+
+/* CLASSE HEADER END */
+
+/* SECTION DO TEXTO */
+
 .texto {
-    background-color: #BAC1B8;
-    align-items: center;
-    font-weight: bold;
-    height: 100vh;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    border-bottom: 20px solid #2B2D42;
-    
+  height: 100vh;
+  background-image: url(../images/imgf.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 3px 3px #2B2D42;
+  padding-bottom: 25px;
+}
 
+.texto-item{
+  padding: 0 5rem;
 }
-.portugues {
-    height: 100%;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
-    padding-bottom: 0px;
-    margin-top: 0px 0;
-    border: 7px solid #FF5964;
-    border-radius: 20px;
-    margin: 10px;
-    background-color: #f6f6f6;
-}
-.portugues_titulo {
-    text-align: center;
-    font-size: 80px;
-}
-.portugues_paragrafo {
-    text-align: justify;
-    font-size: 30px;
-    margin-top: 20px;
-}
-.ingles {
-    height: 100%;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
-    padding-bottom: 0px;
-    margin-top: 0px 0;
-    border: 7px solid #FF5964;
-    border-radius: 20px;
-    margin: 10px;
-    background-color: #f6f6f6;
-}
-.ingles_titulo {
-    text-align: center;
-    font-size: 80px;
-}
-.ingles_paragrafo {
-    text-align: justify;
-    font-size: 30px;
-    margin-top: 20px;
-}
-.portugues {
-    flex-basis: 50%; /* take 50% of initial space */
-    height: 35%;
-  }
-.ingles {
-    flex-basis: 50%; /* take 50% of initial space */
-    height: 35%;
-  }
 
-  /* teste */
-  
+.textowrapper{
+  box-sizing: border-box;
+}
+
+/* teste */
+
+
+/* Inicio galeria*/
+
+.gallery_helper{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.gallery {
+  border: 0px 0px;
+  padding: 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(15, 5vw);
+  grid-gap: 0.75rem;
+  background: #bac1b8;
+  padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 8px solid #5465ff;
+  border-radius: 1em;
+  transition: 95ms;
+}
+
+.gallery__img:hover {
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  border: 8px solid #2b2d42;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.gallery__item--2 {
+  grid-column-start: 7;
+  grid-column-end: 14;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery__item--3 {
+  grid-column-start: 14;
+  grid-column-end: 20;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 10;
+}
+
+.gallery__item--5 {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+
+.gallery__item--6 {
+  grid-column-start: 12;
+  grid-column-end: 20;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+
+.gallery__item--7 {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 10;
+  grid-row-end: 15;
+}
+
+.gallery__item--8 {
+  grid-column-start: 10;
+  grid-column-end: 20;
+  grid-row-start: 10;
+  grid-row-end: 15;
+}
+
+/* FIM GALERIA */
+
+/* COMECO VIDEO*/
+
