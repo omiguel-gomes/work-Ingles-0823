@@ -291,6 +291,7 @@ body{
   }
 
   .card {
+  border: 20px solid #ffffff;
   margin: 10px;
   background-color: #fff;
   border-radius: 10px;
@@ -327,7 +328,6 @@ body{
   }
 
   .social img {
-    border-radius: 50%;
     width: 40px;
     height: 40px;
     margin-right: 10px;
