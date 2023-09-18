@@ -108,26 +108,23 @@
 
    </section>
 
-
-
-
-   <section class="col videos_helper fullwidth sectionender">
-      <div class="col videos fullwidth grid1" id="VIDEOS">
-         <figure class="videos__item videos__item--1 item">
-            <video src="./images/subportugues.mp4" controls loop muted width="640" height="450"   
-            title="Teatro legendado em Português" type="video/mp4" allowfullscreen></video>
+   <section class="col videos_helper fullwidth flex sectionender">
+      <div class="col videos flex" id="VIDEOS">
+         <figure class="videos-item">
+            <video src="./images/subportugues.mp4" controls loop muted title="Teatro legendado em Português" type="video/mp4" allowfullscreen></video>
          </figure>
-         <figure class="videos__item videos__item--2 item">
-            <video src="./images/subingles.mp4" controls loop muted  width="560" height="315"
-             title="Teatro legendado em Ingles" type="video/mp4" allowfullscreen></video>
+         <figure class="videos-item">
+            <video src="./images/subingles.mp4" controls loop muted title="Teatro legendado em Ingles" type="video/mp4" allowfullscreen></video>
          </figure>
+      </div>
    </section>
+
    <section class="col podcast fullwidth sectionender">
-      <div class="col podcast__conteudo fullwidth" id="#PODCAST">
-         <div class="podcast__conteudo__spotfy--1">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6xtzk0uDDfUwxsaanRhtrq/video?utm_source=generator&theme=0" 
+      <div class="col fullwidth podcast-wrapper" id="PODCAST">
+         <div class="">
+            <iframe class="podcast-video" src="https://open.spotify.com/embed/episode/6xtzk0uDDfUwxsaanRhtrq/video?utm_source=generator&theme=0" 
             width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-         <div class="podcast__conteudo__spotfy--2">
+         <div class="podcast-player">
             <iframe src="https://podcasters.spotify.com/pod/show/miguel-gomes63/embed/episodes/Insight-Teatro-Racismo-e299nkc" 
             height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
          </div>
@@ -135,9 +132,6 @@
          </div>
       </div>
    </section>
-
-
-
 
    <section class="contato fullwidth">
       <div class="card" id="CONTACT">
@@ -252,6 +246,7 @@
          </div>
       </div>
    </section>
+   
    <footer></footer>
 </body>
 
