@@ -282,11 +282,10 @@ body{
 
 /* FIM VIDEO*/
 
-/* COMECO PODCAST*/
+/* COMECO CONTATO*/
 
   .contato {
   display: inline-flex;
-  width: 1040px;
   justify-content: space-evenly;
   flex-wrap: wrap;
   }
@@ -295,7 +294,7 @@ body{
   margin: 10px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   width: 300px;
   }
@@ -307,7 +306,8 @@ body{
   }
 
   .card-body {
-  display: inline-flex;
+  font-size: 20px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -323,6 +323,7 @@ body{
   .social {
   display: inline-flex;
   margin-top: auto;
+  align-content: space-evenly;
   }
 
   .social img {
@@ -331,7 +332,5 @@ body{
     height: 40px;
     margin-right: 10px;
   }
-/* FIM PODCAST*/
 
-/* COMECO CONTATO*/
 /* FIM CONTATO*/
