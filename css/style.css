@@ -243,7 +243,7 @@ body{
   position: relative;
   align-content: space-between;
   padding: 6rem 0rem 6rem 0rem;
-  background: #bac1b8;
+  background: #f6f6f6;
   scroll-behavior: smooth;
 }
 
@@ -298,6 +298,12 @@ body{
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   width: 300px;
+  }
+
+  .card:hover {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 95ms;
   }
 
   .card-header img {
