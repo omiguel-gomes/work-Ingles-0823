@@ -287,8 +287,8 @@ body{
   }
   
   .card {
-    border: 20px solid #ffffff;
-    margin: 10px;
+  border: 20px solid #ffffff;
+  margin: 10px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
