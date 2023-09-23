@@ -1,11 +1,12 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto+Slab:wght@800&family=Rubik:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto+Slab:wght@800&family=Rubik:wght@300;400&display=swap");
 
-*, html{
+*,
+html {
   scroll-behavior: smooth !important;
 }
 
-body{
+body {
   margin: 0;
 }
 
@@ -23,52 +24,52 @@ body{
   grid-gap: 0.75rem;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.col{
+.col {
   flex-direction: column;
 }
-.row{
+.row {
   flex-direction: row;
 }
 
-.center-items{
+.center-items {
   align-items: center;
   justify-content: center;
 }
 
-.sectionender{
-  border-bottom: 15px solid #2B2D42;
+.sectionender {
+  border-bottom: 15px solid #2b2d42;
 }
 
-.halfwidth{
+.halfwidth {
   flex: 0.5;
 }
 
-.fullwidth{
+.fullwidth {
   width: 100%;
 }
 
-.text-main{
+.text-main {
   height: 100%;
   width: 100%;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   padding: 30px;
   padding-bottom: 0px;
   margin: 200px;
   z-index: 2;
 }
 
-.main-title{
-  font-family: 'Roboto Slab', serif;
+.main-title {
+  font-family: "Roboto Slab", serif;
   font-size: 4rem;
   padding-bottom: 2rem;
 }
 
-.text-paragraph{
-  font-family: 'Roboto Slab', serif;
+.text-paragraph {
+  font-family: "Roboto Slab", serif;
   font-size: 1.5rem;
   padding-bottom: 2rem;
 }
@@ -85,12 +86,12 @@ body{
   display: flex;
   align-items: center;
   background-color: #f6f6f6;
-  border-bottom: 15px solid #2B2D42;
+  border-bottom: 15px solid #2b2d42;
   z-index: 3;
 }
 
-.header-item button{
-  font-family: 'Rubik', sans-serif;
+.header-item button {
+  font-family: "Rubik", sans-serif;
   display: inline-flex;
   align-content: space-evenly;
   text-decoration: none;
@@ -99,13 +100,13 @@ body{
   font-size: 3rem;
   border-radius: 10px;
   background-color: #ffffff;
-  color: black;
-  border: 4px solid #FF5964;
+  color: #000000;
+  border: 4px solid #ff5964;
   margin: 4px;
 }
 
-.header-item button:hover{
-  background-color: #FF5964;
+.header-item button:hover {
+  background-color: #ff5964;
   color: #ffffff;
 }
 
@@ -129,24 +130,23 @@ body{
   align-items: center;
   font-weight: bold;
   color: #ffffff;
-  text-shadow: 3px 3px #2B2D42;
+  text-shadow: 3px 3px #2b2d42;
   padding-bottom: 25px;
 }
 
-.texto-item{
+.texto-item {
   padding: 0 5rem;
 }
 
-.textowrapper{
+.textowrapper {
   box-sizing: border-box;
 }
 
 /* teste */
 
-
 /* Inicio galeria*/
 
-.gallery_helper{
+.gallery_helper {
   box-sizing: border-box;
   font-size: 62.5%;
 }
@@ -232,16 +232,17 @@ body{
 
 /* COMECO VIDEO*/
 
-.videos_helper{
+.videos_helper {
   box-sizing: border-box;
   background: #f6f6f6;
   padding: 6rem 0;
   scroll-behavior: smooth;
-  height: 70vh;
+  height: 100vh;
   flex-direction: row;
+  justify-content: center;
 }
 
-.videos video{
+.videos video {
   width: 100%;
   height: auto;
 }
@@ -251,7 +252,7 @@ body{
   width: 80%;
 }
 
-.videos-item{
+.videos-item {
   max-width: 80%;
 }
 
@@ -259,20 +260,27 @@ body{
 
 /* INICIO PODCAST */
 
-.podcast-wrapper{
+.podcast-wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 70vh;
+  justify-content: center;
+  height: 100vh;
 }
 
-.podcast-video{
-  border-radius:12px;
-  padding: 2rem 0;
+.podcast-video {
+  border: 15px solid #2b2d429c;
+  border-radius: 10px;
+  margin: 5rem 0;
+  padding: 1rem;
 }
 
-.podcast-player iframe{
+.podcast-player iframe {
   width: 100%;
+  height: 10rem;
+  box-sizing: border-box;
+  border: 15px solid #2b2d429c;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 /* FIM PODCAST */
@@ -284,9 +292,11 @@ body{
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 6rem 0;
-  }
-  
-  .card {
+  height: 100vh;
+  align-content: center;
+}
+
+.card {
   border: 20px solid #ffffff;
   margin: 10px;
   background-color: #fff;
@@ -294,21 +304,22 @@ body{
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   width: 300px;
-  }
+  height: 38rem;
+}
 
-  .card:hover {
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 95ms;
-  }
+.card:hover {
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 95ms;
+}
 
-  .card-header img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
-  .card-body {
+.card-body {
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -316,23 +327,23 @@ body{
   align-items: flex-start;
   padding: 20px;
   min-height: 250px;
-  }
+}
 
-  .card-body p {
+.card-body p {
   font-size: 13px;
   margin: 0 0 40px;
-  }
+}
 
-  .social {
+.social {
   display: inline-flex;
   margin-top: auto;
   align-content: space-evenly;
-  }
+}
 
-  .social img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
+.social img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
 
 /* FIM CONTATO*/
